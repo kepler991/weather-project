@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WeatherApp</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="js" href="src/index.js" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <form id="search-form">
+        <input
+          type="text"
+          placeholder="Enter City Name"
+          id="city-input"
+          class="NameOfCity"
+        />
+        <input type="submit" value="Search" class="submit" />
+      </form>
+      <h1 id="city">
+        Barcelona
+      </h1>
+      <div class="row">
+        <img class="col-4" src="images/night.png" alt="Cloudy Night" />
+        <p class="col-4">
+          <strong>
+            <span class="today" id="date">
+              Today &nbsp; 22:10
+            </span>
+          </strong>
+          <br />
+          <br />
+          <span id="temperature">
+            19
+          </span>
+          <span class="celsius">
+            ºC
+          </span>
+          |
+          <span class="fahrenheit">
+            ºF
+          </span>
+          <br />
+          Cloudy
+          <br />
+          Wind: 20km/h
+          <br />
+          Humidity: 20%
+        </p>
+        <img class="col-4 worldMap" src="images/posicion.png" alt="World Map" />
+      </div>
+      <div class="row forecast5days">
+        <div class="col-2 forecast day2">
+          <strong>
+            Friday
+          </strong>
+          <br />
+          <img
+            src="images/cloudysunny.png"
+            alt="Cloudy and Sunny"
+            width="100px"
+            class="forecastSmall"
+          />
+          <br />
+          &nbsp; 13ºC
+        </div>
+        <div class="col-2 forecast day3">
+          <strong>
+            Saturday
+          </strong>
+          <img
+            src="images/sunny.png"
+            alt="Sunny"
+            width="100px"
+            class="forecastSmall"
+          />
+          <br />
+          &nbsp; 14ºC
+        </div>
+        <div class="col-2 forecast day4">
+          <strong>
+            Sunday
+          </strong>
+          <img
+            src="images/sunny.png"
+            alt="Sunny"
+            width="100px"
+            class="forecastSmall"
+          />
+          <br />
+          &nbsp; 16ºC
+        </div>
+        <div class="col-2 forecast day5">
+          <strong>
+            Monday
+          </strong>
+          <img
+            src="images/cloudy.png"
+            alt="Cloudy"
+            width="100px"
+            class="forecastSmall"
+          />
+          <br />
+          &nbsp; 15ºC
+        </div>
+        <div class="col-2 forecast day6">
+          <strong>
+            Tuesday
+          </strong>
+          <img
+            src="images/rainy.png"
+            alt="Rainy"
+            width="100px"
+            class="forecastSmall"
+          />
+          <br />
+          &nbsp; 14ºC
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

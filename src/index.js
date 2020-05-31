@@ -72,5 +72,3 @@ dateElement.innerHTML = formatDate(currentTime);
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSubmit);
-
-searchCity("Barcelona");
